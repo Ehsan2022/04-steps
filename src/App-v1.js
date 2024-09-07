@@ -1,5 +1,3 @@
-/** @format */
-
 import { useState } from "react";
 
 const messages = [
@@ -43,23 +41,15 @@ export default function App() {
             Step {step} : {messages[step - 1]}
           </p>
           <div className="buttons">
-            <Button classText="previousButton" onClick={handlePrevious}>
-              {"<"} Previous
-            </Button>
-            <Button classText="nextButton" onClick={handleNext}>
-              Next {">"}
-            </Button>
+            <button className="previousButton" onClick={handlePrevious}>
+              {"<"}
+            </button>
+            <button className="nextButton" onClick={handleNext}>
+              {">"}
+            </button>
           </div>
         </div>
       )}
     </>
-  );
-}
-
-function Button({ onClick, classText, children }) {
-  return (
-    <button className={classText} onClick={onClick}>
-      {children}
-    </button>
   );
 }
