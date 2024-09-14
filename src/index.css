@@ -71,7 +71,7 @@ body {
   background-color: rgb(255, 199, 94);
   color: black;
   height: 40px;
-  width: 120px;
+  width: fit-content;
   border: none;
   cursor: pointer;
   padding: 10px 15px;
@@ -86,7 +86,8 @@ body {
 .previousButton:hover,
 .nextButton:hover,
 .close:hover {
-  width: 130px;
+  width: fit-content;
+  background-color: rgb(230, 161, 32);
 }
 
 .buttons button span {
@@ -106,7 +107,7 @@ h3 {
   transform: translate(-50%);
   border: none;
   background: none;
-  width: 120px;
+  width: fit-content;
   cursor: pointer;
   font-size: 14px;
   font-weight: bold;
